@@ -3,15 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Test Repo</title>
+  <title>Mohsin Nazakat - Software Engineer</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #222; color: #fff; text-align: center; margin-top: 10%; }
-    h1 { color: #61dafb; }
-    p { color: #ccc; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 0;
+      background: #2c3e50;
+      color: white;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+      color: #2c3e50;
+    }
+
+    .bio {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .project-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .skill-tag {
+      background: #2c3e50;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 2rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Test Repo</h1>
-  <p>This is a simple index.html hosted with GitHub Pages.</p>
+  <header>
+    <div class="container">
+      <h1>Mohsin Nazakat</h1>
+      <p class="location">📍 Lahore, Pakistan</p>
+      <div class="bio">
+        Software Engineer with expertise in Python, Ruby on Rails, and Machine Learning. 
+        Currently at COMSATS University Lahore, focusing on developing innovative solutions 
+        and exploring new technologies.
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Rain Prediction System</h3>
+          <p>A machine learning system built with Scikit-learn and Support Vector Classifier for predicting rainfall using K-Fold Cross Validation.</p>
+          <a href="https://github.com/mohsinnazakat1/Rain-Prediction-System-K-Fold-Cross-Validation" target="_blank">View Project →</a>
+        </div>
+        
+        <div class="project-card">
+          <h3>Audio Transcription Tool</h3>
+          <p>Python-based system for transcribing audio files to text, supporting both Urdu and Roman-Urdu scripts using speech recognition.</p>
+          <a href="https://github.com/mohsinnazakat1/transcription-using-speech-recognition-python" target="_blank">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Contact App</h3>
+          <p>A modern TypeScript-based contact management application with a clean and intuitive interface.</p>
+          <a href="https://github.com/mohsinnazakat1/contact-app" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills & Technologies</h2>
+      <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Ruby on Rails</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Kotlin</span>
+        <span class="skill-tag">MATLAB</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Data Structures</span>
+        <span class="skill-tag">Image Processing</span>
+        <span class="skill-tag">Flask</span>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <p>Connect with me on <a href="https://github.com/mohsinnazakat1" target="_blank">GitHub</a>
+      or check out more of my work.</p>
+    </section>
+  </main>
 </body>
 </html>
